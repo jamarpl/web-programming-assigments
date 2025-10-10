@@ -1,15 +1,23 @@
-/* Jamar Plummer 2405323 */
+
+:root {
+  --primary-color: black;
+  --secondary-color: burlywood;
+  --background-color: lemonchiffon;
+  --header-color: lightblue;
+  --footer-color: #ddd;
+  --font-family: Arial, Sans-serif;
+}
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-family);
   margin: 0;
   padding: 0;
   align-items: center;
-  background-color: lemonchiffon;
+  background-color: var(--background-color);
 }
 
 header {
-  background: lightblue;
+  background: var(--header-color);
   text-align: center;
   padding: 10px;
 }
@@ -22,8 +30,14 @@ header img {
 nav a {
   margin: 0 10px;
   text-decoration: underline;
-  color: black;
+  color: var(--primary-color);
   padding: 5px 10px;
+}
+
+nav a:hover {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  color: var(--primary-color);
 }
 
 section {
@@ -37,7 +51,7 @@ ul {
 }
 
 footer {
-  background: #ddd;
+  background: var(--footer-color);
   text-align: center;
   padding: 10px;
 }
