@@ -1,0 +1,191 @@
+/* Jamar Plummer 2405323 */
+
+:root {
+    --color-black: #000;
+    --color-dark-gray: #333;
+    --color-medium-gray: #666;
+    --color-light-gray: #ddd;
+    --color-bg-gray: #f5f5f5;
+    --color-white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trirong', serif;
+    background-color: var(--color-bg-gray);
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-black);
+    font-size: 28px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.form-panel, .preview-panel {
+    background: var(--color-white);
+    padding: 30px;
+    border: 1px solid var(--color-light-gray);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-dark-gray);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--color-light-gray);
+    background: var(--color-white);
+    font-size: 14px;
+    font-family: 'Trirong', serif;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: var(--color-dark-gray);
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+button {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid var(--color-black);
+    background: var(--color-black);
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Trirong', serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+#printBtn {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+#printBtn:hover {
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.receipt-card {
+    padding: 30px;
+    border: 2px solid var(--color-black);
+    background: var(--color-white);
+}
+
+.hidden {
+    display: none;
+}
+
+.receipt-card h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--color-black);
+    padding-bottom: 15px;
+}
+
+.receipt-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--color-light-gray);
+}
+
+.receipt-row:last-child {
+    border-bottom: none;
+}
+
+.receipt-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--color-medium-gray);
+}
+
+.receipt-value {
+    font-weight: 600;
+    color: var(--color-black);
+    text-align: right;
+}
+
+.receipt-total {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid var(--color-black);
+    font-size: 18px;
+}
+
+.receipt-header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--color-black);
+}
+
+.receipt-footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-light-gray);
+    text-align: center;
+    font-size: 12px;
+    color: var(--color-medium-gray);
+}
+
+.sideLable {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+::placeholder {
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
