@@ -357,7 +357,8 @@ input:focus, textarea:focus, select:focus { /* Focus Pseudoclass - 1A */
 }
 
 .form-btn:hover {
-  background-color: var(--red-accent);
+  background-color: var(--light-brown);
+  color: var(--white);
 } /* 1A */
 
 .cart-container {
@@ -402,6 +403,8 @@ input:focus, textarea:focus, select:focus { /* Focus Pseudoclass - 1A */
 
 .remove-btn:hover {
   background-color: var(--dark-red);
+  color: var(--white);
+  opacity: 0.9;
 }
 
 .cart-summary {
@@ -630,8 +633,20 @@ footer a:hover {
   background-color: var(--brown) !important;
 }
 
+.btn-brown:hover {
+  background-color: var(--light-brown) !important;
+  color: var(--white);
+  opacity: 0.9;
+}
+
 .btn-red {
   background-color: var(--red-accent) !important;
+}
+
+.btn-red:hover {
+  background-color: var(--dark-red) !important;
+  color: var(--white);
+  opacity: 0.9;
 }
 
 .btn-green {
